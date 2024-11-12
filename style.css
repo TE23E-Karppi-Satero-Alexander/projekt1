@@ -1,0 +1,11 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    gap: 2%;
+}
+
+.rubrik{
+    grid-column: 1/6;
+    text-align: center;
+}
