@@ -5,7 +5,56 @@ body{
     gap: 2%;
 }
 
-.rubrik{
+header{
     grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    background-image: url(./img/Duk.jpg); /* Ändra till webp */
+    background-size: 90%;
+}
+
+#rubrik{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.gullåda{
+    background-color: #fffead;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.länkar{
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1.5fr 2fr;
+    gap: 7px;
+}
+
+#ingredienser{
+    grid-row: 1/3;
+}
+
+#information{
+    grid-column: 4/5;
+}
+
+#instruktioner{
+    grid-row: 1/4;
+    grid-column: 2/4;
+}
+
+#parmesanbild{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.footer{
 }
