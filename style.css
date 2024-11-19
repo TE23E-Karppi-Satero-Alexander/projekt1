@@ -11,7 +11,7 @@ header{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url(./img/Duk.jpg); /* Ändra till webp */
+    background-image: url(./img/Duk.webp);
     background-size: 90%;
 }
 
@@ -23,9 +23,11 @@ header{
 }
 
 .gullåda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #fffead;
     border-radius: 10px;
-    text-align: center;
 }
 
 .länkar{
@@ -34,26 +36,51 @@ header{
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1.5fr;
-    grid-template-rows: 1fr 1.5fr 2fr;
+    grid-template-rows: 1fr 1.5fr 1fr 1fr;
     gap: 7px;
 }
 
 #ingredienser{
-    grid-row: 1/3;
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+
+#ingredienserRubrik{
+    margin-bottom: 0;
 }
 
 #information{
+    grid-row: 1/3;
     grid-column: 4/5;
 }
 
 #instruktioner{
-    grid-row: 1/4;
+    grid-row: 2/5;
     grid-column: 2/4;
 }
 
-#parmesanbild{
-    grid-row: 3/4;
+#parmesan{
+    border-radius: 10px;
+    grid-row: 4/5;
+    grid-column: 4/5;
+    height:;
+    width: 25%;
+}
+
+#köttfärssås1
+{
+    border-radius: 10px;
+    grid-row: 4/5;
     grid-column: 1/2;
+    height: fit-content;
+    width: 100%;
+}
+
+#köttfärssås2
+{
+    border-radius: 10px;    
+    height: 100px;
+    width: 100%;
 }
 
 .footer{
