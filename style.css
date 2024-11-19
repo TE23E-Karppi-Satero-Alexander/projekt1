@@ -85,5 +85,8 @@ h2{
     width: 100%;
 }
 
-.footer{
+footer{
+    width: 75%;
+    grid-row: 3/4;
+    grid-column: 2/4;
 }
